@@ -6,8 +6,6 @@ category: azuredevops
 tags: [ 'azuredevops','powershell' ]
 ---
 
-## Enabling Scripts to Access the OAuth Token using PowerShell
-
 Azure DevOps allows us to run custom scripts to help our software and infrastructure get delivered quickly. There are times that the scripts run without an issues, however, sometimes there is a need to invoke the Azure DevOps Rest API in the CD pipeline. Sure, you can create a script using the API, authenticating with Azure DevOps with a personal access token and should work, but there is a better solution.
 
 Allowing scripts to access the oauth token authenticates the script with the System.AccessToken variable, which runs as the Project Collection Build Service, a built-in service account in Azure DevOps. Today, we will be taking a look on how to enable this feature using PowerShell. 
