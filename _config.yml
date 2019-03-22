@@ -1,0 +1,154 @@
+
+# Site settings
+
+# NB! Set your site's url, otherwise stuff will break :)
+
+url: "https://pwshliquori.github.io"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
+
+baseurl: /blog
+
+# Google tracking id
+
+google-tracking-id: ""
+
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+
+force-https: True
+
+#############
+# HTML Head #
+#############
+
+lang: "en"
+author: "Chris Liquori"
+title: "Start-Blog"
+description: "Blog of Chris Liquori. Automating everything with PowerShell"
+keywords: "liquori, chris, pwsh, azuredevops, jekyll, theme"
+favicon: "/img/favicon.ico"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+########
+# Blog #
+########
+
+enable-gesture-navigation: True
+
+post-preview-words: 96
+
+paginate: 5
+
+email-share: False
+twitter-share: False
+
+disqus-shortname: "pwshliquori"
+
+syntax-highlight: True
+
+############
+# Timeline #
+############
+
+events:
+  - image: /img/timeline/automate.png
+    date: "Present day"
+    description: "Automating everything"
+  - image: "/img/timeline/pwsh.png"
+    date: "January 2016"
+    description: "Start learning PowerShell"
+  - image: "/img/timeline/helpdesk.png"
+    date: "December 2011 - January 2016"
+    description: "Started IT career"
+  - image: "/img/timeline/brain.png"
+    date: "September 2003 - August 2007"
+    description: "Dream of becoming brain surgeon"
+
+###########
+# Contact #
+###########
+
+email: "liquori.chris@gmail.com"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "Hi. I'm Chris"
+author_blurb_image: "/img/author.png"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "twitter"
+    url: "https://twitter.com/pwshliquori"
+  - title: "github"
+    url: "https://github.com/pwshliquori/blog"
+
+############
+# 404 page #
+############
+
+err-404-img: "/img/octocat.png"
+
+################################################################################
+
+# NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  Blog: 'latest-post'
+  About: 'about'
+  Timeline: 'timeline'
+  Contact: 'contact'
+
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
+# Pagination path
+
+paginate_path: "blog/page:num/"
+
+# Enable minification SASS
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jemoji
