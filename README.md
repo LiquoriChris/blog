@@ -1,8 +1,8 @@
-# Chris Liquori Blog
+# Start-Blog
 
 Using Jekyll and Personal Jekyll Theme.
 
-Thanks to le4ker for creating the theme. 
+Thanks to le4ker for creating the theme. https://github.com/le4ker
 
 Blog will focus on PowerShell and Azure DevOps automations. Please feel free to comment and submit issues if you see something that is not working.
 
