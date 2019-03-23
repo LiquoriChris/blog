@@ -8,5 +8,5 @@ Blog will focus on PowerShell and Azure DevOps automations. Please feel free to 
 
 Thank you and enjoy.
 
-Follow me on [Twitter](https://twitter.com/pwshliquori): @pwshliquori  
+Follow me on [Twitter](https://twitter.com/pwshliquori)   
 Follow me on [LinkedIn](https://www.linkedin.com/in/pwshliquori)
