@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Azure DevOps - Git push using PowerShell
+title: Azure DevOps - Pushing to GitTfs Repo using PowerShell and Rest API
 category: azuredevops
 tags: [ 'azuredevops','powershell' ]
 ---
