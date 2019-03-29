@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Azure DevOps - Enable OAuth Token using PowerShell
+title: Intro to YAML Build Definition (Build as Code)
 category: azuredevops
 tags: [ 'azuredevops','yaml' ]
 ---
