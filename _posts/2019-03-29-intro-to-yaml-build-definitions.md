@@ -8,9 +8,9 @@ tags: [ 'azuredevops','yaml' ]
 
 Azure DevOps introduced YAML (Yet Another Markup Language) to use in build definitions, which has many advantages over using the traditional visual designer. First, let's go over a description of what YAML is, and how it started. 
 
-YAML was designed with humans in mind. It was structured so it can be easily read by humans, describing exactly what it was going to do. It can be interepted by scripting languages and is easy to implement, especially, in this case, Azure DevOps. 
+YAML was designed with humans in mind. It was structured so it can be easily read by humans, describing exactly what it was going to do. It can be interpreted by scripting languages and is easy to implement, especially, in this case, Azure DevOps. 
 
-There are two way to start building your definition using YAML, using a built in template Azure DevOps has provided, which is many or by utilizing the "View YAML" feature in the visual designer. When creating a new build definition, Azure DevOps will provided a plethra of template to start with, a shell of your build definition, that you can customize and tailor to your organization. Another handy feature is by clicking on the "View YAML" button above any task, this will show your task in a YAML format with all values exactly how you had it. All you need to do get started creating YAML build definitions is:
+There are two way to start building your definition using YAML, using a built in template Azure DevOps has provided, which is many or by utilizing the "View YAML" feature in the visual designer. When creating a new build definition, Azure DevOps will provided a plethora of template to start with, a shell of your build definition, which you can customize and tailor to your organization. Another handy feature is by clicking on the "View YAML" button above any task, this will show your task in a YAML format with all values exactly how you had it. All you need to do get started creating YAML build definitions is:
 
 <p align="left">
 - Enable the preview feature under your profile picture and clicking on "Preview Features>Enable YAML Pipeline Creation Experience" <BR>
@@ -49,7 +49,7 @@ steps:
     - include: - Include these branches to the CI trigger. <BR>
     - -master - Uses the master branch.<BR>
     - paths: -Defines the paths to include or exclude in the CI trigger.<BR>
-    - exclude: - Exlude these paths from the CI trigger.<BR>
+    - exclude: - Exclude these paths from the CI trigger.<BR>
     - -azure-pipelines.yml - Exlude the build definition file from triggering a CI build. We exclude this as we do not want a build to kick off if we modify the YAML file.<BR>
 - steps: - Defines the build steps to take to build the application. This is the "Agent job" in the visual designer.<BR>
 - -task: - Defines the task name.<BR>
@@ -57,7 +57,7 @@ steps:
 - inputs: - Defines the arguments of the task. (RootFolderorFile and IncludeRootFolder). If there are no arguments provided in the YAML file, it assumes the default usuage in the task. e.g. The Publish Build Artifacts Task defaults the "drop" artifact to $(Build.ArtifactStagingDirectory)<BR>
 </p>
 
-The example above demostrates the advantages of using the YAML experience over the visual designer.
+The example above demonstrates the advantages of using the YAML experience over the visual designer.
 
 ### Traceability
 
@@ -73,9 +73,9 @@ Making changes to the build definition is made in your local repo instead of cre
 
 ### Builds as Code
 
-We all know that automation is taking over and building Infrastructure as Code is becoming mainstream. This defines "Builds as Code," automating the of creation build and release definitions. 
+We all know that automation is taking over and building Infrastructure as Code is becoming mainstream. This defines "Builds as Code," automating the creation of build and release definitions. 
 
-At the time of this writing, Azure DevOps only supports YAML in the build definition pipeline. There are plans to introduce YAML release definitions, however, it looks like it is slated for sometime this quarter. Transitioning to YAML build definitions will add value to your organization and should be a stepping stone to automating your build definitions in Azure DevOps.
+At the time of this writing, Azure DevOps only supports YAML in the build definition pipeline. There are plans to introduce YAML release definitions, however, it looks like it is slated for some time this quarter. Transitioning to YAML build definitions will add value to your organization and should be a stepping stone to automating your build definitions in Azure DevOps.
 
 Microsoft has created a reference on how to take YAML builds a step further, adding variables, pull request triggers, and jobs. As well as providing all of the built in tasks, arguments for each, and examples. You may ask, what about extensions the community has created? How can I find out how to use extensions? Github is your friend. Most extensions created by the community have their extension accessible in GitHub, discover the tasks, arguments, and how to use them. Another option is to create the task in the visual designer and view the yaml from the task. 
 
