@@ -14,7 +14,7 @@ There are two way to start building your definition using YAML, using a built in
 
 <p  align="left">
 - Enable the preview feature under your profile picture and clicking on "Preview Features>Enable YAML Pipeline Creation Experience" 
-![alt text](/img/previewFeature.png "Preview Features")
+![Alt Text](/../master/img/previewFeatures.png)
 - Create a `azure-pipelines.yml` file in the root of your repo, this tells Azure DevOps that you want to use YAML build definitions.  
 </p>
 
@@ -41,6 +41,7 @@ steps:
   displayName: 'Publish Artifact: drop'
 ```
 
+<p  align="left">
 - pool: - Defines which agent pool to use when build your application.
     - name: - The name of the agent pool. (Azure Hosted VM with Visual Studio 2017)
 - name: - Defines the build number format. In this case, the date and revision incremented with each build. (e.g. 20190329.1).
@@ -55,6 +56,7 @@ steps:
 - -task: - Defines the task name.
 - displayName: - Defines the display name that will show up in the task log when the build is running. ($(Build.SourcesDirectory) is the working directory on the build machine, /_work/##/s)
 - inputs: - Defines the arguments of the task. (RootFolderorFile and IncludeRootFolder). If there are no arguments provided in the YAML file, it assumes the default usuage in the task. e.g. The Publish Build Artifacts Task defaults the "drop" artifact to $(Build.ArtifactStagingDirectory)
+</p>
 
 The example above demostrates the advantages of using the YAML experience over the visual designer.
 
