@@ -16,7 +16,7 @@ There are two way to start building your definition using YAML, using a built in
 - Enable the preview feature under your profile picture and clicking on "Preview Features>Enable YAML Pipeline Creation Experience" <BR>
 - Create a `azure-pipelines.yml` file in the root of your repo, this tells Azure DevOps that you want to use YAML build definitions.  
 </p>
-![Alt Text](/../master/img/previewFeatures.png) 
+![alt text](https://github.com/pwshliquori/blog/blob/master/img/previewFeatures.png) 
 
 Let's take a look at a very basic YAML definition that copies files to the artifact directory and uploads the artifact.
 
