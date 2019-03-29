@@ -12,11 +12,13 @@ YAML was designed with humans in mind. It was structured so it can be easily rea
 
 There are two way to start building your definition using YAML, using a built in template Azure DevOps has provided, which is many or by utilizing the "View YAML" feature in the visual designer. When creating a new build definition, Azure DevOps will provided a plethra of template to start with, a shell of your build definition, that you can customize and tailor to your organization. Another handy feature is by clicking on the "View YAML" button above any task, this will show your task in a YAML format with all values exactly how you had it. All you need to do get started creating YAML build definitions is:
 
-<p  align="left">
+<p align="left">
 - Enable the preview feature under your profile picture and clicking on "Preview Features>Enable YAML Pipeline Creation Experience" <BR>
 - Create a `azure-pipelines.yml` file in the root of your repo, this tells Azure DevOps that you want to use YAML build definitions.  
 </p>
+<p align="left">
 [![preview-Features.png](https://i.postimg.cc/Bnr2z5xF/preview-Features.png)](https://postimg.cc/pmB9hFcV)
+</p>
 
 Let's take a look at a very basic YAML definition that copies files to the artifact directory and uploads the artifact.
 
