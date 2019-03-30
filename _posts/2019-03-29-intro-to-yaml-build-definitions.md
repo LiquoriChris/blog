@@ -85,12 +85,12 @@ pwshliquori
 
 ### YAML Schema
 
-https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema
+[https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema]
 
 ### Learn YAML
 
-https://learnxinyminutes.com/docs/yaml/
+[https://learnxinyminutes.com/docs/yaml/]
 
 ### Builds as Code Lab
 
-https://www.azuredevopslabs.com/labs/azuredevops/yaml/
+[https://www.azuredevopslabs.com/labs/azuredevops/yaml/]
