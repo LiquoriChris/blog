@@ -67,13 +67,9 @@ The build definition sits in the root of the repo. We can now use native git com
 
 There is no need to go log into the Azure DevOps site to view the build definition. Open the azure-pipelines.yml file to view the current build definition.
 
-### Easability
-
-Making changes to the build definition is made in your local repo instead of creating a draft build pipeline using the visual designer. 
-
 ### Builds as Code
 
-We all know that automation is taking over and building Infrastructure as Code is becoming mainstream. This defines "Builds as Code," automating the creation of build and release definitions. 
+We all know that automation is taking over and building Infrastructure as Code is becoming mainstream. This defines "Builds as Code," automating the creation of build and release definitions. Making changes to the build definition is made in your local repo instead of creating a draft build definition using the visual designer. 
 
 At the time of this writing, Azure DevOps only supports YAML in the build definition pipeline. There are plans to introduce YAML release definitions, however, it looks like it is slated for some time this quarter. Transitioning to YAML build definitions will add value to your organization and should be a stepping stone to automating your build definitions in Azure DevOps.
 
