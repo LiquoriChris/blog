@@ -46,6 +46,10 @@ This happens because PowerShell is trying to execute the command it was given, w
 ```
 $Json = Get-Content -Path C:\temp\fruit.json
 $Json |ConvertFrom-Json
+
+apple        grape        blueberry
+-----        -----        ---------
+{red, green} {green, red} blue
 ```
 
 As you can see, you can take a JSON file and easily convert it to a custom object, however, if you are using a non-standard PowerShell format, just store it in a here-string variable to be used later on. For example, if we needed to update a field using a Rest API, storing the JSON payload in a here-string is much easier than converting the payload to JSON and using it in the body. Let's look at both examples:
