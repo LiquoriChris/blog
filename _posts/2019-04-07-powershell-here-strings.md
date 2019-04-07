@@ -9,7 +9,7 @@ tags: [ 'powershell' ]
 Running commands in PowerShell that require a format that will not run natively in PowerShell could be a difficult task, or can it? PowerShell provides a way to store, for example, a xml or JSON payload as a string, enter here-string. A here-string is a single or double quoted string in which the quotation marks are interepted literally. A simple example is invoking a Rest API that requires a POST with a JSON body.
 
 ```
-{
+$Body = {
     "apple": [
         "red",
         "green"
